@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "HKit.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    NSMutableArray *phones = [NSMutableArray array];
+    for (NSInteger i = 0; i < 100; i++) {
+        [phones addObject:[self randomPhone]];
+    }
+    
+    for (NSString *mobile in phones) {
+        
+        BOOL isPhone = [mobile isMobileNumber];
+        
+        NSLog(@"%@ - %@", mobile, isPhone ? @"是" : @"否");
+    }
+    
+}
+
+- (NSString *)randomPhone {
+    NSString *phone = @"1";
+    for (NSInteger i = 0; i < 10; i++) {
+        int num = arc4random_uniform(10);
+        phone = [phone stringByAppendingString:[NSString stringWithFormat:@"%d", num]];
+    }
+    return phone;
 }
 
 

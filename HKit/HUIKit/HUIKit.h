@@ -9,6 +9,10 @@
 #ifndef HUIKit_h
 #define HUIKit_h
 
+#pragma mark - Macro
+
+#import "UIMacro.h"
+
 #pragma mark - Catagory
 
 #import "UIView+HAdd.h"
@@ -17,10 +21,10 @@
 #import "UITableView+HAdd.h"
 #import "UILabel+HAdd.h"
 #import "UIViewController+HAdd.h"
-#import "UIScrollView+HAdd.h"
 
 #import "NSString+HAdd.h"
 #import "NSData+HAdd.h"
-#import "NSObject+HAdd.h"
+
+#pragma mark - Common
 
 #endif /* HUIKit_h */
