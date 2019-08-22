@@ -220,4 +220,44 @@
     return [predicate evaluateWithObject: str];
 }
 
+- (NSString *)sortByASCII {
+    
+    const char *ch = [self cStringUsingEncoding:NSASCIIStringEncoding];
+    NSMutableArray *ascciArray = [[NSMutableArray alloc] init];
+    for (int i = 0; i < strlen(ch); i++) {
+        [ascciArray addObject:[NSString stringWithFormat:@"%d", ch[i]]];
+    }
+    [self shellSort:ascciArray];
+    
+    NSMutableArray *strArray = [NSMutableArray array];
+    for (NSInteger i = 0; i < ascciArray.count; i++) {
+        char ascci = [ascciArray[i] integerValue];
+        NSString *str = [NSString stringWithFormat:@"%c", ascci];
+        [strArray addObject:str];
+    }
+    
+    return [strArray componentsJoinedByString:@""];
+}
+
+/**
+ 希尔排序
+
+ @param list 排序后的数组
+ */
+-(void)shellSort:(NSMutableArray *)list{
+    int gap = (int)list.count / 2;
+    while (gap >= 1) {
+        for(int i = gap ; i < [list count]; i++){
+            NSInteger temp = [[list objectAtIndex:i] intValue];
+            int j = i;
+            while (j >= gap && temp < [[list objectAtIndex:(j - gap)] intValue]) {
+                [list replaceObjectAtIndex:j withObject:[list objectAtIndex:j-gap]];
+                j -= gap;
+            }
+            [list replaceObjectAtIndex:j withObject:[NSNumber numberWithInteger:temp]];
+        }
+        gap = gap / 2;
+    }
+}
+
 @end

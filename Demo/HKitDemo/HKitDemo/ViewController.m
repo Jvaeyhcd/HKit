@@ -18,6 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSString *answer = @"BCDA";
+    answer = [answer sortByASCII];
+    NSLog(@"%@", answer);
+    
     NSMutableArray *phones = [NSMutableArray array];
     for (NSInteger i = 0; i < 100; i++) {
         [phones addObject:[self randomPhone]];

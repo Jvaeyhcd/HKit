@@ -194,6 +194,13 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (BOOL)validateNumberAndEnglish:(NSString *)str;
 
+/**
+ 字符串根据ASCII码排序
+
+ @return 排序后的字符串
+ */
+- (NSString *)sortByASCII;
+
 @end
 
 NS_ASSUME_NONNULL_END
