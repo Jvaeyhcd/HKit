@@ -7,7 +7,7 @@
 //
 
 #import "UIScrollView+HAdd.h"
-#import <MJRefresh.h>
+#import <MJRefresh/MJRefresh.h>
 #import <objc/runtime.h>
 
 static const void *kClickBlock = @"clickBlock";

@@ -1,0 +1,10 @@
+
+platform :ios, '8.0'
+source 'https://github.com/CocoaPods/Specs.git'
+
+use_frameworks!
+target 'HKitDemo' do
+    
+    # objective-c
+    pod 'HKit', :path => '../../'
+end

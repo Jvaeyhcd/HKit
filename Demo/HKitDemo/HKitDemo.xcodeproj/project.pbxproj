@@ -13,20 +13,7 @@
 		387A766C22F92E1F0074D9BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 387A766B22F92E1F0074D9BC /* Assets.xcassets */; };
 		387A766F22F92E1F0074D9BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 387A766D22F92E1F0074D9BC /* LaunchScreen.storyboard */; };
 		387A767222F92E1F0074D9BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 387A767122F92E1F0074D9BC /* main.m */; };
-		387A76A822F94AA90074D9BC /* HBaseAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 387A767B22F94AA90074D9BC /* HBaseAppDelegate.m */; };
-		387A76A922F94AA90074D9BC /* HBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 387A767F22F94AA90074D9BC /* HBaseViewController.m */; };
-		387A76AA22F94AA90074D9BC /* HBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 387A768322F94AA90074D9BC /* HBaseNavigationController.m */; };
-		387A76AB22F94AA90074D9BC /* HcdActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 387A768522F94AA90074D9BC /* HcdActionSheet.m */; };
-		387A76AC22F94AA90074D9BC /* HRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 387A768922F94AA90074D9BC /* HRouter.m */; };
-		387A76AD22F94AA90074D9BC /* UIImage+HAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 387A768F22F94AA90074D9BC /* UIImage+HAdd.m */; };
-		387A76AE22F94AA90074D9BC /* UITableView+HAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 387A769022F94AA90074D9BC /* UITableView+HAdd.m */; };
-		387A76AF22F94AA90074D9BC /* UIColor+HAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 387A769222F94AA90074D9BC /* UIColor+HAdd.m */; };
-		387A76B122F94AA90074D9BC /* UILabel+HAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 387A769422F94AA90074D9BC /* UILabel+HAdd.m */; };
-		387A76B222F94AA90074D9BC /* UICollectionView+HAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 387A769522F94AA90074D9BC /* UICollectionView+HAdd.m */; };
-		387A76B322F94AA90074D9BC /* UIViewController+HAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 387A769622F94AA90074D9BC /* UIViewController+HAdd.m */; };
-		387A76B422F94AA90074D9BC /* UIView+HAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 387A769822F94AA90074D9BC /* UIView+HAdd.m */; };
-		387A76B522F94AA90074D9BC /* NSData+HAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 387A76A322F94AA90074D9BC /* NSData+HAdd.m */; };
-		387A76B722F94AA90074D9BC /* NSString+HAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 387A76A522F94AA90074D9BC /* NSString+HAdd.m */; };
+		408C2A21937B9E57EE91D1DE /* Pods_HKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BBBAB4CFD4CB34C1682C184 /* Pods_HKitDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,39 +27,9 @@
 		387A766E22F92E1F0074D9BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		387A767022F92E1F0074D9BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		387A767122F92E1F0074D9BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		387A767B22F94AA90074D9BC /* HBaseAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBaseAppDelegate.m; sourceTree = "<group>"; };
-		387A767C22F94AA90074D9BC /* HBaseAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBaseAppDelegate.h; sourceTree = "<group>"; };
-		387A767E22F94AA90074D9BC /* HBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBaseViewController.h; sourceTree = "<group>"; };
-		387A767F22F94AA90074D9BC /* HBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBaseViewController.m; sourceTree = "<group>"; };
-		387A768022F94AA90074D9BC /* HCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCommon.h; sourceTree = "<group>"; };
-		387A768222F94AA90074D9BC /* HBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBaseNavigationController.h; sourceTree = "<group>"; };
-		387A768322F94AA90074D9BC /* HBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBaseNavigationController.m; sourceTree = "<group>"; };
-		387A768522F94AA90074D9BC /* HcdActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HcdActionSheet.m; sourceTree = "<group>"; };
-		387A768622F94AA90074D9BC /* HcdActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HcdActionSheet.h; sourceTree = "<group>"; };
-		387A768822F94AA90074D9BC /* HRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRouter.h; sourceTree = "<group>"; };
-		387A768922F94AA90074D9BC /* HRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRouter.m; sourceTree = "<group>"; };
-		387A768B22F94AA90074D9BC /* UIMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIMacro.h; sourceTree = "<group>"; };
-		387A768C22F94AA90074D9BC /* HKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKit.h; sourceTree = "<group>"; };
-		387A768F22F94AA90074D9BC /* UIImage+HAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HAdd.m"; sourceTree = "<group>"; };
-		387A769022F94AA90074D9BC /* UITableView+HAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+HAdd.m"; sourceTree = "<group>"; };
-		387A769122F94AA90074D9BC /* UIView+HAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HAdd.h"; sourceTree = "<group>"; };
-		387A769222F94AA90074D9BC /* UIColor+HAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HAdd.m"; sourceTree = "<group>"; };
-		387A769422F94AA90074D9BC /* UILabel+HAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+HAdd.m"; sourceTree = "<group>"; };
-		387A769522F94AA90074D9BC /* UICollectionView+HAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+HAdd.m"; sourceTree = "<group>"; };
-		387A769622F94AA90074D9BC /* UIViewController+HAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HAdd.m"; sourceTree = "<group>"; };
-		387A769722F94AA90074D9BC /* UIColor+HAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HAdd.h"; sourceTree = "<group>"; };
-		387A769822F94AA90074D9BC /* UIView+HAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HAdd.m"; sourceTree = "<group>"; };
-		387A769922F94AA90074D9BC /* UITableView+HAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+HAdd.h"; sourceTree = "<group>"; };
-		387A769A22F94AA90074D9BC /* UIImage+HAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+HAdd.h"; sourceTree = "<group>"; };
-		387A769C22F94AA90074D9BC /* UICollectionView+HAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+HAdd.h"; sourceTree = "<group>"; };
-		387A769D22F94AA90074D9BC /* UILabel+HAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+HAdd.h"; sourceTree = "<group>"; };
-		387A769E22F94AA90074D9BC /* UIViewController+HAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HAdd.h"; sourceTree = "<group>"; };
-		387A76A022F94AA90074D9BC /* NSData+HAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+HAdd.h"; sourceTree = "<group>"; };
-		387A76A222F94AA90074D9BC /* NSString+HAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HAdd.h"; sourceTree = "<group>"; };
-		387A76A322F94AA90074D9BC /* NSData+HAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+HAdd.m"; sourceTree = "<group>"; };
-		387A76A522F94AA90074D9BC /* NSString+HAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HAdd.m"; sourceTree = "<group>"; };
-		387A76A622F94AA90074D9BC /* HUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUtils.h; sourceTree = "<group>"; };
-		387A76A722F94AA90074D9BC /* HUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUIKit.h; sourceTree = "<group>"; };
+		3BBBAB4CFD4CB34C1682C184 /* Pods_HKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7160B176A6F33BA3222EB275 /* Pods-HKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-HKitDemo/Pods-HKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		8B85D098DDF027F1DD8D5393 /* Pods-HKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HKitDemo.release.xcconfig"; path = "Target Support Files/Pods-HKitDemo/Pods-HKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				408C2A21937B9E57EE91D1DE /* Pods_HKitDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,9 +47,10 @@
 		387A765622F92E130074D9BC = {
 			isa = PBXGroup;
 			children = (
-				387A767822F94A5A0074D9BC /* HKit */,
 				387A766122F92E140074D9BC /* HKitDemo */,
 				387A766022F92E140074D9BC /* Products */,
+				9DF818DDA92F994836CB4BEE /* Pods */,
+				B883C110A5503D5651B95E35 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,125 +78,22 @@
 			path = HKitDemo;
 			sourceTree = "<group>";
 		};
-		387A767822F94A5A0074D9BC /* HKit */ = {
+		9DF818DDA92F994836CB4BEE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				387A768C22F94AA90074D9BC /* HKit.h */,
-				387A767922F94AA90074D9BC /* HCommon */,
-				387A768A22F94AA90074D9BC /* HMacro */,
-				387A768D22F94AA90074D9BC /* HUIKit */,
+				7160B176A6F33BA3222EB275 /* Pods-HKitDemo.debug.xcconfig */,
+				8B85D098DDF027F1DD8D5393 /* Pods-HKitDemo.release.xcconfig */,
 			);
-			name = HKit;
-			path = ../../HKit;
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
-		387A767922F94AA90074D9BC /* HCommon */ = {
+		B883C110A5503D5651B95E35 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				387A768022F94AA90074D9BC /* HCommon.h */,
-				387A767A22F94AA90074D9BC /* HBaseAppDelegate */,
-				387A767D22F94AA90074D9BC /* HBaseViewController */,
-				387A768122F94AA90074D9BC /* HBaseNavigationController */,
-				387A768422F94AA90074D9BC /* HcdActionSheet */,
-				387A768722F94AA90074D9BC /* HRouter */,
+				3BBBAB4CFD4CB34C1682C184 /* Pods_HKitDemo.framework */,
 			);
-			path = HCommon;
-			sourceTree = "<group>";
-		};
-		387A767A22F94AA90074D9BC /* HBaseAppDelegate */ = {
-			isa = PBXGroup;
-			children = (
-				387A767C22F94AA90074D9BC /* HBaseAppDelegate.h */,
-				387A767B22F94AA90074D9BC /* HBaseAppDelegate.m */,
-			);
-			path = HBaseAppDelegate;
-			sourceTree = "<group>";
-		};
-		387A767D22F94AA90074D9BC /* HBaseViewController */ = {
-			isa = PBXGroup;
-			children = (
-				387A767E22F94AA90074D9BC /* HBaseViewController.h */,
-				387A767F22F94AA90074D9BC /* HBaseViewController.m */,
-			);
-			path = HBaseViewController;
-			sourceTree = "<group>";
-		};
-		387A768122F94AA90074D9BC /* HBaseNavigationController */ = {
-			isa = PBXGroup;
-			children = (
-				387A768222F94AA90074D9BC /* HBaseNavigationController.h */,
-				387A768322F94AA90074D9BC /* HBaseNavigationController.m */,
-			);
-			path = HBaseNavigationController;
-			sourceTree = "<group>";
-		};
-		387A768422F94AA90074D9BC /* HcdActionSheet */ = {
-			isa = PBXGroup;
-			children = (
-				387A768622F94AA90074D9BC /* HcdActionSheet.h */,
-				387A768522F94AA90074D9BC /* HcdActionSheet.m */,
-			);
-			path = HcdActionSheet;
-			sourceTree = "<group>";
-		};
-		387A768722F94AA90074D9BC /* HRouter */ = {
-			isa = PBXGroup;
-			children = (
-				387A768822F94AA90074D9BC /* HRouter.h */,
-				387A768922F94AA90074D9BC /* HRouter.m */,
-			);
-			path = HRouter;
-			sourceTree = "<group>";
-		};
-		387A768A22F94AA90074D9BC /* HMacro */ = {
-			isa = PBXGroup;
-			children = (
-				387A768B22F94AA90074D9BC /* UIMacro.h */,
-			);
-			path = HMacro;
-			sourceTree = "<group>";
-		};
-		387A768D22F94AA90074D9BC /* HUIKit */ = {
-			isa = PBXGroup;
-			children = (
-				387A768E22F94AA90074D9BC /* HUICategory */,
-				387A769F22F94AA90074D9BC /* HFoundation */,
-				387A76A622F94AA90074D9BC /* HUtils.h */,
-				387A76A722F94AA90074D9BC /* HUIKit.h */,
-			);
-			path = HUIKit;
-			sourceTree = "<group>";
-		};
-		387A768E22F94AA90074D9BC /* HUICategory */ = {
-			isa = PBXGroup;
-			children = (
-				387A769A22F94AA90074D9BC /* UIImage+HAdd.h */,
-				387A768F22F94AA90074D9BC /* UIImage+HAdd.m */,
-				387A769922F94AA90074D9BC /* UITableView+HAdd.h */,
-				387A769022F94AA90074D9BC /* UITableView+HAdd.m */,
-				387A769122F94AA90074D9BC /* UIView+HAdd.h */,
-				387A769822F94AA90074D9BC /* UIView+HAdd.m */,
-				387A769722F94AA90074D9BC /* UIColor+HAdd.h */,
-				387A769222F94AA90074D9BC /* UIColor+HAdd.m */,
-				387A769D22F94AA90074D9BC /* UILabel+HAdd.h */,
-				387A769422F94AA90074D9BC /* UILabel+HAdd.m */,
-				387A769C22F94AA90074D9BC /* UICollectionView+HAdd.h */,
-				387A769522F94AA90074D9BC /* UICollectionView+HAdd.m */,
-				387A769E22F94AA90074D9BC /* UIViewController+HAdd.h */,
-				387A769622F94AA90074D9BC /* UIViewController+HAdd.m */,
-			);
-			path = HUICategory;
-			sourceTree = "<group>";
-		};
-		387A769F22F94AA90074D9BC /* HFoundation */ = {
-			isa = PBXGroup;
-			children = (
-				387A76A022F94AA90074D9BC /* NSData+HAdd.h */,
-				387A76A322F94AA90074D9BC /* NSData+HAdd.m */,
-				387A76A222F94AA90074D9BC /* NSString+HAdd.h */,
-				387A76A522F94AA90074D9BC /* NSString+HAdd.m */,
-			);
-			path = HFoundation;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,9 +103,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 387A767522F92E1F0074D9BC /* Build configuration list for PBXNativeTarget "HKitDemo" */;
 			buildPhases = (
+				6A6A573DE6F97EBD2F2C9EDD /* [CP] Check Pods Manifest.lock */,
 				387A765B22F92E140074D9BC /* Sources */,
 				387A765C22F92E140074D9BC /* Frameworks */,
 				387A765D22F92E140074D9BC /* Resources */,
+				0BF7E0FDC4BD7B956BC37C1D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -305,28 +163,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0BF7E0FDC4BD7B956BC37C1D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HKitDemo/Pods-HKitDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
+				"${BUILT_PRODUCTS_DIR}/HKit/HKit.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HKitDemo/Pods-HKitDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A6A573DE6F97EBD2F2C9EDD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HKitDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		387A765B22F92E140074D9BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				387A76AB22F94AA90074D9BC /* HcdActionSheet.m in Sources */,
-				387A76AD22F94AA90074D9BC /* UIImage+HAdd.m in Sources */,
-				387A76A922F94AA90074D9BC /* HBaseViewController.m in Sources */,
-				387A76A822F94AA90074D9BC /* HBaseAppDelegate.m in Sources */,
-				387A76B522F94AA90074D9BC /* NSData+HAdd.m in Sources */,
 				387A766722F92E140074D9BC /* ViewController.m in Sources */,
-				387A76B122F94AA90074D9BC /* UILabel+HAdd.m in Sources */,
 				387A767222F92E1F0074D9BC /* main.m in Sources */,
-				387A76AC22F94AA90074D9BC /* HRouter.m in Sources */,
 				387A766422F92E140074D9BC /* AppDelegate.m in Sources */,
-				387A76AE22F94AA90074D9BC /* UITableView+HAdd.m in Sources */,
-				387A76B222F94AA90074D9BC /* UICollectionView+HAdd.m in Sources */,
-				387A76B722F94AA90074D9BC /* NSString+HAdd.m in Sources */,
-				387A76AF22F94AA90074D9BC /* UIColor+HAdd.m in Sources */,
-				387A76B422F94AA90074D9BC /* UIView+HAdd.m in Sources */,
-				387A76B322F94AA90074D9BC /* UIViewController+HAdd.m in Sources */,
-				387A76AA22F94AA90074D9BC /* HBaseNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,11 +361,13 @@
 		};
 		387A767622F92E1F0074D9BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7160B176A6F33BA3222EB275 /* Pods-HKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NLP5PZS8U3;
 				INFOPLIST_FILE = HKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -483,11 +380,13 @@
 		};
 		387A767722F92E1F0074D9BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B85D098DDF027F1DD8D5393 /* Pods-HKitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NLP5PZS8U3;
 				INFOPLIST_FILE = HKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

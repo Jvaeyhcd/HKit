@@ -134,6 +134,7 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "JSONKit", "~> 1.4"
+  spec.dependency "DZNEmptyDataSet", "~> 1.8.1"
+  spec.dependency "MJRefresh", "~> 3.2.0"
 
 end
