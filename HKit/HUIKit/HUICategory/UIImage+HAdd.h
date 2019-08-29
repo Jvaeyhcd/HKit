@@ -44,6 +44,14 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (UIImage *)viewToImage:(UIView *)view;
 
+/**
+ 给图片添加圆角处理
+
+ @param size 图片大小
+ @return 处理后的图片
+ */
++ (UIImage *)circleImageWithSize:(CGSize)size;
+
 @end
 
 NS_ASSUME_NONNULL_END

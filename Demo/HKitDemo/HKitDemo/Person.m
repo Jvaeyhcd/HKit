@@ -12,6 +12,8 @@
     NSString *_birthDay;
 }
 
+//@property (nonatomic, copy) NSString *birthDay;
+
 @end
 
 @implementation Person

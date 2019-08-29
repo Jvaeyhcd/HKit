@@ -102,4 +102,24 @@
     return image;
 }
 
++ (UIImage *)circleImageWithSize:(CGSize)size {
+    // NO代表透明
+    UIGraphicsBeginImageContextWithOptions(size, NO, 0.0);
+    // 获取上下文
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    // 添加一个圆
+    CGRect rect = CGRectMake(0, 0, size.width, size.height);
+    CGContextAddEllipseInRect(ctx, rect);
+    
+    // 裁剪
+    CGContextClip(ctx);
+    // 得到裁剪后的图像
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    
+    // 关闭上下文
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
+
 @end

@@ -47,11 +47,12 @@
     NSDictionary *dict = @{@"name": @"Jvaeyhcd", @"age": @10, @"sex": @"man", @"nickName": @"Huang"};
     
     Person *person = [[Person alloc] initWithDict:dict];
+    [person setValue:@"1992-08-11" forKey:@"birthDay"];
     [person eat];
     [Person work];
     
-//    NSDictionary *array = [Person protocolInfo];
-//    NSLog(@"%@", array);
+    NSArray *array = [Person propertiesList];
+    NSLog(@"%@", array);
     
 //
 //    dispatch_group_t group = dispatch_group_create();
@@ -120,6 +121,14 @@
 //    NSLog(@"---");
     
     [self testGroup];
+    
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    [self.view addSubview:view];
+}
+
+- (void)viewWillLayoutSubviews {
+    
+    NSLog(@"viewWillLayoutSubviews");
 }
 
 /** 串行同步 */
