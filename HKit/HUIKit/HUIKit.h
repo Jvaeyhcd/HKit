@@ -24,6 +24,7 @@
 
 #import "NSString+HAdd.h"
 #import "NSData+HAdd.h"
+#import "NSObject+HRuntime.h"
 
 #pragma mark - Common
 

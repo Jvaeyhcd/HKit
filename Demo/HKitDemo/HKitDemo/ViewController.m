@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "HKit.h"
+#import "Person.h"
 
 @interface ViewController ()
 
@@ -42,6 +43,16 @@
     [str20 appendFormat:@"111111111111%@", str12];
     
     NSLog(@"%@-%@-%@-%@", str10, str11, str12, str20);
+    
+    NSDictionary *dict = @{@"name": @"Jvaeyhcd", @"age": @10, @"sex": @"man", @"nickName": @"Huang"};
+    
+    Person *person = [[Person alloc] initWithDict:dict];
+    [person eat];
+    [Person work];
+    
+//    NSDictionary *array = [Person protocolInfo];
+//    NSLog(@"%@", array);
+    
 //
 //    dispatch_group_t group = dispatch_group_create();
 //    dispatch_queue_t queue = dispatch_queue_create("concurrent.queue", DISPATCH_QUEUE_CONCURRENT);

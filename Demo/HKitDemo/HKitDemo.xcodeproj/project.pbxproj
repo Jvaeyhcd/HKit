@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		380D09B523177A130033F6AC /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 380D09B423177A130033F6AC /* Person.m */; };
 		387A766422F92E140074D9BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 387A766322F92E140074D9BC /* AppDelegate.m */; };
 		387A766722F92E140074D9BC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 387A766622F92E140074D9BC /* ViewController.m */; };
 		387A766A22F92E140074D9BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 387A766822F92E140074D9BC /* Main.storyboard */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		380D09B323177A130033F6AC /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		380D09B423177A130033F6AC /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		387A765F22F92E140074D9BC /* HKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		387A766222F92E140074D9BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		387A766322F92E140074D9BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -69,6 +72,8 @@
 				387A766322F92E140074D9BC /* AppDelegate.m */,
 				387A766522F92E140074D9BC /* ViewController.h */,
 				387A766622F92E140074D9BC /* ViewController.m */,
+				380D09B323177A130033F6AC /* Person.h */,
+				380D09B423177A130033F6AC /* Person.m */,
 				387A766822F92E140074D9BC /* Main.storyboard */,
 				387A766B22F92E1F0074D9BC /* Assets.xcassets */,
 				387A766D22F92E1F0074D9BC /* LaunchScreen.storyboard */,
@@ -84,7 +89,6 @@
 				7160B176A6F33BA3222EB275 /* Pods-HKitDemo.debug.xcconfig */,
 				8B85D098DDF027F1DD8D5393 /* Pods-HKitDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -221,6 +225,7 @@
 			files = (
 				387A766722F92E140074D9BC /* ViewController.m in Sources */,
 				387A767222F92E1F0074D9BC /* main.m in Sources */,
+				380D09B523177A130033F6AC /* Person.m in Sources */,
 				387A766422F92E140074D9BC /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
