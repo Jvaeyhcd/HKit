@@ -1,8 +1,8 @@
 //
 //  HBaseViewController.m
-//  Flower
+//  HKit
 //
-//  Created by 超讯研发部 on 2019/6/28.
+//  Created by Jvaeyhcd on 2019/6/28.
 //  Copyright © 2019 STS. All rights reserved.
 //
 

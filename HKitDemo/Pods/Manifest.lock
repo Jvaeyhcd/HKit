@@ -1,0 +1,27 @@
+PODS:
+  - DZNEmptyDataSet (1.8.1)
+  - HKit (0.0.1):
+    - DZNEmptyDataSet (~> 1.8.1)
+    - MJRefresh (~> 3.2.0)
+  - MJRefresh (3.2.0)
+
+DEPENDENCIES:
+  - HKit (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - DZNEmptyDataSet
+    - MJRefresh
+
+EXTERNAL SOURCES:
+  HKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  HKit: 347a0a3cf37c50f233e70cb2e83ee181b3b0e1f2
+  MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
+
+PODFILE CHECKSUM: 4ddc4c8bea0f471e26c7fbf4078a5ae593f6d6c3
+
+COCOAPODS: 1.8.4

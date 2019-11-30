@@ -1,0 +1,6 @@
+framework module Pods_HKitDemoUITests {
+  umbrella header "Pods-HKitDemoUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

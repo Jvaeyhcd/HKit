@@ -2,7 +2,7 @@
 //  UIImageView+HAdd.m
 //  DZNEmptyDataSet
 //
-//  Created by 超讯研发部 on 2019/8/29.
+//  Created by Jvaeyhcd on 2019/8/29.
 //
 
 #import "UIImageView+HAdd.h"

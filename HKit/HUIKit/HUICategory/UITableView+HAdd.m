@@ -1,8 +1,8 @@
 //
 //  UITableView+HAdd.m
-//  Flower
+//  HKit
 //
-//  Created by 超讯研发部 on 2019/6/27.
+//  Created by Jvaeyhcd on 2019/6/27.
 //  Copyright © 2019 STS. All rights reserved.
 //
 

@@ -4,15 +4,16 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 use_frameworks!
 target 'HKitDemo' do
-    
-    # objective-c
-    pod 'HKit', :path => '../'
-    
-    target 'HKitDemoTests' do
-      inherit! :search_paths
-    end
-    
-    target 'HKitDemoUITests' do
-      inherit! :search_paths
-    end
+  # objective-c
+  pod 'HKit', :path => '../'
+end
+
+target 'HKitDemoTests' do
+  # objective-c
+  pod 'HKit', :path => '../'
+end
+
+target 'HKitDemoUITests' do
+  # objective-c
+  pod 'HKit', :path => '../'
 end

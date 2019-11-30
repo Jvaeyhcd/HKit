@@ -2,7 +2,7 @@
 //  NSObject+HRuntime.m
 //  DZNEmptyDataSet
 //
-//  Created by 超讯研发部 on 2019/8/28.
+//  Created by Jvaeyhcd on 2019/8/28.
 //
 
 #import "NSObject+HRuntime.h"
