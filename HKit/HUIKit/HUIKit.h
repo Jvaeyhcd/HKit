@@ -20,6 +20,7 @@
 #import "UIImage+HAdd.h"
 #import "UITableView+HAdd.h"
 #import "UILabel+HAdd.h"
+#import "UIButton+HAdd.h"
 #import "UIViewController+HAdd.h"
 #import "UINavigationController+HFullscreenPopGesture.h"
 

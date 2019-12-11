@@ -30,6 +30,9 @@
     "Foundation"
   ],
   "requires_arc": true,
+  "xcconfig": {
+    "OTHER_LDFLAGS": "-ObjC"
+  },
   "dependencies": {
     "DZNEmptyDataSet": [
       "~> 1.8.1"

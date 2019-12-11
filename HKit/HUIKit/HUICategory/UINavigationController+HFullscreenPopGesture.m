@@ -44,10 +44,18 @@
     if ([gestureRecognizer isKindOfClass:[UIPanGestureRecognizer class]]) {
         CGPoint translation = [(UIPanGestureRecognizer *)gestureRecognizer translationInView:gestureRecognizer.view];
         BOOL isLeftToRight = [UIApplication sharedApplication].userInterfaceLayoutDirection == UIUserInterfaceLayoutDirectionLeftToRight;
+        
+        if (isLeftToRight) {
+            NSLog(@"gesture left to right");
+        } else {
+            NSLog(@"gesture right to left");
+        }
+        
         CGFloat multiplier = isLeftToRight ? 1 : -1;
         if (translation.x * multiplier <= 0) {
             return NO;
         }
+        
     }
     
     return YES;
@@ -255,6 +263,14 @@ typedef void (^_HViewControllerWillAppearInjectBlock)(UIViewController *viewCont
 - (void)setH_viewControllerBasedNavigationBarAppearanceEnabled:(BOOL)enabled {
     SEL key = @selector(h_viewControllerBasedNavigationBarAppearanceEnabled);
     objc_setAssociatedObject(self, key, @(enabled), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (id<HNavigationControllerDelegate>)h_navigationDelegate {
+    return objc_getAssociatedObject(self, _cmd);
+}
+
+- (void)setH_navigationDelegate:(id<HNavigationControllerDelegate>)delegate {
+    objc_setAssociatedObject(self, @selector(h_navigationDelegate), delegate, OBJC_ASSOCIATION_ASSIGN);
 }
 
 @end

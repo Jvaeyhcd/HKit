@@ -21,6 +21,7 @@
 #import "NSData+HAdd.h"
 #import "NSObject+HRuntime.h"
 #import "NSString+HAdd.h"
+#import "UIButton+HAdd.h"
 #import "UICollectionView+HAdd.h"
 #import "UIColor+HAdd.h"
 #import "UIImage+HAdd.h"
