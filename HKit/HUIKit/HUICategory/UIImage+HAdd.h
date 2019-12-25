@@ -52,6 +52,21 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (UIImage *)circleImageWithSize:(CGSize)size;
 
+
+/// 纯色图片
+/// @param color 图片的颜色
++ (UIImage * _Nonnull)imageWithColor:(UIColor * _Nonnull)color;
+
+/// 纯色图片
+/// @param color 图片颜色
+/// @param size 图片大小
++ (UIImage * _Nonnull)imageWithColor:(UIColor * _Nonnull)color size:(CGSize)size;
+
+/// 生成可以改变尺寸的图片
+/// @param color 图片颜色
+/// @param cornerRadius 圆角
++ (UIImage * _Nonnull)resizableImageWithColor:(UIColor * _Nonnull)color cornerRadius:(CGFloat)cornerRadius;
+
 @end
 
 NS_ASSUME_NONNULL_END
