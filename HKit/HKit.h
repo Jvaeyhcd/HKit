@@ -10,6 +10,7 @@
 #define HKit_h
 
 #import "UIMacro.h"
+#import "HSingleton.h"
 #import "HUIKit.h"
 #import "HCommon.h"
 
