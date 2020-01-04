@@ -2,7 +2,9 @@ PODS:
   - DZNEmptyDataSet (1.8.1)
   - HKit (0.0.1):
     - DZNEmptyDataSet (~> 1.8.1)
+    - MBProgressHUD (~> 1.1.0)
     - MJRefresh (~> 3.2.0)
+  - MBProgressHUD (1.1.0)
   - MJRefresh (3.2.0)
 
 DEPENDENCIES:
@@ -11,6 +13,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - DZNEmptyDataSet
+    - MBProgressHUD
     - MJRefresh
 
 EXTERNAL SOURCES:
@@ -19,7 +22,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
-  HKit: 5c2e7ad221a1d2c85f13b87560d9cd7d274bcd9b
+  HKit: 77b37d068ba8202b9ec17f6bfde69eda30e96eae
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
 
 PODFILE CHECKSUM: 4ddc4c8bea0f471e26c7fbf4078a5ae593f6d6c3

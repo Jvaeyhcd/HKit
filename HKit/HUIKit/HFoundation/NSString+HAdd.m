@@ -21,17 +21,17 @@
     return boundingBox.size;
 }
 
-- (BOOL)isBlankString {
-    if (self == nil) {
++ (BOOL)isBlankString:(NSString *)str {
+    if (str == nil) {
         return YES;
     }
-    if (self == NULL) {
+    if (str == NULL) {
         return YES;
     }
-    if ([self isKindOfClass:[NSNull class]]) {
+    if ([str isKindOfClass:[NSNull class]]) {
         return YES;
     }
-    if ([[self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] length] == 0) {
+    if ([[str stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] length] == 0) {
         
         return YES;
     }

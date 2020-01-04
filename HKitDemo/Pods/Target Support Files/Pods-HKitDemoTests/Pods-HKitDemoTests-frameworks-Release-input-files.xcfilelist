@@ -1,4 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-HKitDemoTests/Pods-HKitDemoTests-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework
 ${BUILT_PRODUCTS_DIR}/HKit/HKit.framework
+${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework
 ${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework

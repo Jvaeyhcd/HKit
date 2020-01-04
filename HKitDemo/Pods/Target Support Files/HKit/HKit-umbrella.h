@@ -36,6 +36,7 @@
 #import "UIViewController+HAdd.h"
 #import "HUIKit.h"
 #import "HUtils.h"
+#import "HToastUtil.h"
 
 FOUNDATION_EXPORT double HKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char HKitVersionString[];

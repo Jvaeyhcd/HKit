@@ -137,5 +137,6 @@ Pod::Spec.new do |spec|
   spec.xcconfig = { "OTHER_LDFLAGS" => "-ObjC" }
   spec.dependency "DZNEmptyDataSet", "~> 1.8.1"
   spec.dependency "MJRefresh", "~> 3.2.0"
+  spec.dependency "MBProgressHUD", "~> 1.1.0"
 
 end

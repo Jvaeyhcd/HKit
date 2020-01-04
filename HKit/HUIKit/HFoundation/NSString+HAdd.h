@@ -36,7 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @return YES or NO
  */
-- (BOOL)isBlankString;
++ (BOOL)isBlankString:(NSString *)str;
 
 /**
  字符串空格判断
