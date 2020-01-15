@@ -5,11 +5,11 @@
 //  Created by Salvador on 2020/1/4.
 //
 
-#import "HToastUtil.h"
+#import "HHUDUtil.h"
 #import "MBProgressHUD.h"
 #import "UIMacro.h"
 
-@implementation HToastUtil
+@implementation HHUDUtil
 
 /**
  *  显示提示消息
@@ -23,7 +23,15 @@
     hud.contentColor = [UIColor whiteColor];
     hud.bezelView.backgroundColor = [UIColor colorWithWhite:0 alpha:0.8];
     hud.removeFromSuperViewOnHide = YES;
-    [hud hideAnimated:YES afterDelay:2];
+    [hud hideAnimated:YES afterDelay:1];
+}
+
++ (void)showLoading {
+    
+}
+
++ (void)hideLoading {
+    
 }
 
 @end

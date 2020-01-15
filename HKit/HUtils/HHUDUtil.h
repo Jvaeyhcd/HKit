@@ -9,12 +9,18 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HToastUtil : NSObject
+@interface HHUDUtil : NSObject
 
 /**
  *  显示提示消息
  */
 + (void)showToast:(NSString *)msg;
+
+/// 显示加载
++ (void)showLoading;
+
+/// 隐藏加载
++ (void)hideLoading;
 
 @end
 

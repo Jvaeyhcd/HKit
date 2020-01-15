@@ -13,6 +13,6 @@
 #import "HSingleton.h"
 #import "HUIKit.h"
 #import "HCommon.h"
-#import "HToastUtil.h"
+#import "HHUDUtil.h"
 
 #endif /* HKit_h */
