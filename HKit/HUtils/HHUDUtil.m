@@ -27,11 +27,14 @@
 }
 
 + (void)showLoading {
-    
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:[UIApplication sharedApplication].keyWindow animated:YES];
+    hud.mode = MBProgressHUDModeIndeterminate;
+    hud.removeFromSuperViewOnHide = YES;
+    [hud showAnimated:YES];
 }
 
 + (void)hideLoading {
-    
+    [MBProgressHUD hideHUDForView:[UIApplication sharedApplication].keyWindow animated:YES];
 }
 
 @end
