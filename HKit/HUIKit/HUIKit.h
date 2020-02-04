@@ -25,6 +25,8 @@
 #import "UINavigationController+HFullscreenPopGesture.h"
 
 #import "NSString+HAdd.h"
+
+#import "NSPredicate+HAdd.h"
 #import "NSData+HAdd.h"
 #import "NSObject+HRuntime.h"
 

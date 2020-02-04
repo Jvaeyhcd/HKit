@@ -60,6 +60,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (BOOL)isIDCardNumber;
 
++ (BOOL)validateIDCardNumber:(NSString *)idCardNumber;
+
 /**
  首元素为字母
  @return YES or NO
@@ -200,6 +202,15 @@ NS_ASSUME_NONNULL_BEGIN
  @return 排序后的字符串
  */
 - (NSString *)sortByASCII;
+
+- (NSInteger)characterCounts;
+
++ (BOOL)stringContainsEmoji:(NSString *)string;
+
+/// 字节数
+- (NSUInteger)charactorNumber;
+
+- (NSString *)subStringByByteWithIndex:(NSInteger)index;
 
 @end
 

@@ -13,6 +13,7 @@
 #import "HBaseViewController.h"
 #import "HBaseAppDelegate.h"
 #import "HcdActionSheet.h"
+#import "HcdGuideView.h"
 #import "HRouter.h"
 
 #endif /* HCommon_h */

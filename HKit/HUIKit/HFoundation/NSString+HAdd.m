@@ -70,6 +70,113 @@
     return [idCardPredicate evaluateWithObject:self];
 }
 
++ (BOOL)validateIDCardNumber:(NSString *)idCardNumber {
+    
+    idCardNumber = [idCardNumber stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    NSInteger length =0;
+    if (!idCardNumber) {
+        return NO;
+    }else {
+        length = idCardNumber.length;
+        //不满足15位和18位，即身份证错误
+        if (length !=15 && length !=18) {
+            return NO;
+        }
+    }
+    // 省份代码
+    NSArray *areasArray = @[@"11",@"12", @"13",@"14", @"15",@"21", @"22",@"23", @"31",@"32", @"33",@"34", @"35",@"36", @"37",@"41", @"42",@"43", @"44",@"45", @"46",@"50", @"51",@"52", @"53",@"54", @"61",@"62", @"63",@"64", @"65",@"71", @"81",@"82", @"91"];
+    
+    // 检测省份身份行政区代码
+    NSString *valueStart2 = [idCardNumber substringToIndex:2];
+    BOOL areaFlag =NO; //标识省份代码是否正确
+    for (NSString *areaCode in areasArray) {
+        if ([areaCode isEqualToString:valueStart2]) {
+            areaFlag =YES;
+            break;
+        }
+    }
+    
+    if (!areaFlag) {
+        return NO;
+    }
+    
+    NSRegularExpression *regularExpression;
+    NSUInteger numberofMatch;
+    
+    int year =0;
+    //分为15位、18位身份证进行校验
+    switch (length) {
+        case 15:
+            //获取年份对应的数字
+            year = [idCardNumber substringWithRange:NSMakeRange(6,2)].intValue +1900;
+            
+            if (year %4 ==0 || (year %100 ==0 && year %4 ==0)) {
+                //创建正则表达式 NSRegularExpressionCaseInsensitive：不区分字母大小写的模式
+                //测试出生日期的合法性
+                regularExpression = [[NSRegularExpression alloc]initWithPattern:@"^[1-9][0-9]{5}[0-9]{2}((01|03|05|07|08|10|12)(0[1-9]|[1-2][0-9]|3[0-1])|(04|06|09|11)(0[1-9]|[1-2][0-9]|30)|02(0[1-9]|[1-2][0-9]))[0-9]{3}$" options:NSRegularExpressionCaseInsensitive error:nil];
+            }else {
+                //测试出生日期的合法性
+                regularExpression = [[NSRegularExpression alloc]initWithPattern:@"^[1-9][0-9]{5}[0-9]{2}((01|03|05|07|08|10|12)(0[1-9]|[1-2][0-9]|3[0-1])|(04|06|09|11)(0[1-9]|[1-2][0-9]|30)|02(0[1-9]|1[0-9]|2[0-8]))[0-9]{3}$" options:NSRegularExpressionCaseInsensitive error:nil];
+            }
+            //使用正则表达式匹配字符串 NSMatchingReportProgress:找到最长的匹配字符串后调用block回调
+            numberofMatch = [regularExpression numberOfMatchesInString:idCardNumber options:NSMatchingReportProgress range:NSMakeRange(0, idCardNumber.length)];
+            
+            if(numberofMatch >0) {
+                return YES;
+            }else {
+                return NO;
+            }
+        case 18:
+            year = [idCardNumber substringWithRange:NSMakeRange(6,4)].intValue;
+            if (year %4 ==0 || (year %100 ==0 && year %4 ==0)) {
+                regularExpression = [[NSRegularExpression alloc]initWithPattern:@"^[1-9][0-9]{5}19[0-9]{2}((01|03|05|07|08|10|12)(0[1-9]|[1-2][0-9]|3[0-1])|(04|06|09|11)(0[1-9]|[1-2][0-9]|30)|02(0[1-9]|[1-2][0-9]))[0-9]{3}[0-9Xx]$" options:NSRegularExpressionCaseInsensitive error:nil];//测试出生日期的合法性
+            }else {
+                regularExpression = [[NSRegularExpression alloc]initWithPattern:@"^[1-9][0-9]{5}19[0-9]{2}((01|03|05|07|08|10|12)(0[1-9]|[1-2][0-9]|3[0-1])|(04|06|09|11)(0[1-9]|[1-2][0-9]|30)|02(0[1-9]|1[0-9]|2[0-8]))[0-9]{3}[0-9Xx]$" options:NSRegularExpressionCaseInsensitive error:nil];//测试出生日期的合法性
+            }
+            numberofMatch = [regularExpression numberOfMatchesInString:idCardNumber options:NSMatchingReportProgress range:NSMakeRange(0, idCardNumber.length)];
+            
+            
+            if(numberofMatch >0) {
+                //1：校验码的计算方法 身份证号码17位数分别乘以不同的系数。从第一位到第十七位的系数分别为：7－9－10－5－8－4－2－1－6－3－7－9－10－5－8－4－2。将这17位数字和系数相乘的结果相加。
+                
+                int S = [idCardNumber substringWithRange:NSMakeRange(0,1)].intValue*7 + [idCardNumber substringWithRange:NSMakeRange(10,1)].intValue *7 + [idCardNumber substringWithRange:NSMakeRange(1,1)].intValue*9 + [idCardNumber substringWithRange:NSMakeRange(11,1)].intValue *9 + [idCardNumber substringWithRange:NSMakeRange(2,1)].intValue*10 + [idCardNumber substringWithRange:NSMakeRange(12,1)].intValue *10 + [idCardNumber substringWithRange:NSMakeRange(3,1)].intValue*5 + [idCardNumber substringWithRange:NSMakeRange(13,1)].intValue *5 + [idCardNumber substringWithRange:NSMakeRange(4,1)].intValue*8 + [idCardNumber substringWithRange:NSMakeRange(14,1)].intValue *8 + [idCardNumber substringWithRange:NSMakeRange(5,1)].intValue*4 + [idCardNumber substringWithRange:NSMakeRange(15,1)].intValue *4 + [idCardNumber substringWithRange:NSMakeRange(6,1)].intValue*2 + [idCardNumber substringWithRange:NSMakeRange(16,1)].intValue *2 + [idCardNumber substringWithRange:NSMakeRange(7,1)].intValue *1 + [idCardNumber substringWithRange:NSMakeRange(8,1)].intValue *6 + [idCardNumber substringWithRange:NSMakeRange(9,1)].intValue *3;
+                
+                //2：用加出来和除以11，看余数是多少？余数只可能有0－1－2－3－4－5－6－7－8－9－10这11个数字
+                int Y = S %11;
+                NSString *M =@"F";
+                NSString *JYM =@"10X98765432";
+                M = [JYM substringWithRange:NSMakeRange(Y,1)];// 3：获取校验位
+                
+                NSString *lastStr = [idCardNumber substringWithRange:NSMakeRange(17,1)];
+                
+                NSLog(@"%@",M);
+                NSLog(@"%@",[idCardNumber substringWithRange:NSMakeRange(17,1)]);
+                //4：检测ID的校验位
+                if ([lastStr isEqualToString:@"x"]) {
+                    if ([M isEqualToString:@"X"]) {
+                        return YES;
+                    }else{
+                        
+                        return NO;
+                    }
+                }else{
+                    
+                    if ([M isEqualToString:[idCardNumber substringWithRange:NSMakeRange(17,1)]]) {
+                        return YES;
+                    }else {
+                        return NO;
+                    }
+                    
+                }
+                
+            }else {
+                return NO;
+            }
+        default:
+            return NO;
+    }
+}
+
 - (BOOL)firstIsLetter {
     if (!self || [self isKindOfClass:[NSNull class]]) {
         return NO;
@@ -258,6 +365,107 @@
         }
         gap = gap / 2;
     }
+}
+
+/**
+ 判断字符串个数 中文算2个 英文算一个
+ */
+- (NSInteger)characterCounts{
+    NSInteger  character = 0;
+    for(int i=0; i< [self length];i++){
+        int a = [self characterAtIndex:i];
+        if( a >= 0x4e00 && a <= 0x9fa5){ //判断是否为中文
+            character +=2;
+        }else{
+            character +=1;
+        }
+    }
+    return character;
+}
+
++ (BOOL)stringContainsEmoji:(NSString *)string
+{
+    __block BOOL returnValue = NO;
+    
+    [string enumerateSubstringsInRange:NSMakeRange(0, [string length])
+                               options:NSStringEnumerationByComposedCharacterSequences
+                            usingBlock:^(NSString *substring, NSRange substringRange, NSRange enclosingRange, BOOL *stop) {
+                                const unichar hs = [substring characterAtIndex:0];
+                                if (0xd800 <= hs && hs <= 0xdbff) {
+                                    if (substring.length > 1) {
+                                        const unichar ls = [substring characterAtIndex:1];
+                                        const int uc = ((hs - 0xd800) * 0x400) + (ls - 0xdc00) + 0x10000;
+                                        if (0x1d000 <= uc && uc <= 0x1f77f) {
+                                            returnValue = YES;
+                                        }
+                                    }
+                                } else if (substring.length > 1) {
+                                    const unichar ls = [substring characterAtIndex:1];
+                                    if (ls == 0x20e3) {
+                                        returnValue = YES;
+                                    }
+                                } else {
+                                    if (0x2100 <= hs && hs <= 0x27ff) {
+                                        returnValue = YES;
+                                    } else if (0x2B05 <= hs && hs <= 0x2b07) {
+                                        returnValue = YES;
+                                    } else if (0x2934 <= hs && hs <= 0x2935) {
+                                        returnValue = YES;
+                                    } else if (0x3297 <= hs && hs <= 0x3299) {
+                                        returnValue = YES;
+                                    } else if (hs == 0xa9 || hs == 0xae || hs == 0x303d || hs == 0x3030 || hs == 0x2b55 || hs == 0x2b1c || hs == 0x2b1b || hs == 0x2b50) {
+                                        returnValue = YES;
+                                    }
+                                }
+                            }];
+    
+    return returnValue;
+}
+
+- (NSUInteger)charactorNumber
+{
+    NSStringEncoding encoding = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000);
+    return [self charactorNumberWithEncoding:encoding];
+}
+
+- (NSUInteger)charactorNumberWithEncoding:(NSStringEncoding)encoding
+{
+    NSUInteger strLength = 0;
+    char *p = (char *)[self cStringUsingEncoding:encoding];
+    
+    NSUInteger lengthOfBytes = [self lengthOfBytesUsingEncoding:encoding];
+    for (int i = 0; i < lengthOfBytes; i++) {
+        if (*p) {
+            p++;
+            strLength++;
+        }
+        else {
+            p++;
+        }
+    }
+    return strLength;
+}
+
+- (NSString *)subStringByByteWithIndex:(NSInteger)index{
+    
+    NSInteger sum = 0;
+    NSString *subStr = [[NSString alloc] init];
+    
+    for(int i = 0; i<[self length]; i++){
+        
+        unichar strChar = [self characterAtIndex:i];
+        if(strChar < 256){
+            sum += 1;
+        } else {
+            sum += 2;
+        }
+        if (sum >= index) {
+            subStr = [self substringToIndex:i+1];
+            return subStr;
+        }
+    }
+    
+    return subStr;
 }
 
 @end

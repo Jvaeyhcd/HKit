@@ -29,6 +29,8 @@
 + (void)showLoading {
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:[UIApplication sharedApplication].keyWindow animated:YES];
     hud.mode = MBProgressHUDModeIndeterminate;
+    hud.contentColor = [UIColor whiteColor];
+    hud.bezelView.backgroundColor = [UIColor colorWithWhite:0 alpha:0.8];
     hud.removeFromSuperViewOnHide = YES;
     [hud showAnimated:YES];
 }
