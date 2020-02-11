@@ -8,6 +8,7 @@
 
 #import "HBaseNavigationController.h"
 #import "UIColor+HAdd.h"
+#import "UIView+HAdd.h"
 #import "UIMacro.h"
 
 @interface HBaseNavigationController ()
@@ -34,7 +35,9 @@
     if (nil == _navLineView) {
         _navLineView = [[UIView alloc] initWithFrame:CGRectMake(0, 43, SCREEN_WIDTH, 1)];
         [_navLineView setBackgroundColor: [UIColor colorWithRGBHex:0xF6F6F6]];
-//        [self.navigationBar dropShadowWithOffset:CGSizeMake(0, 3) radius:3 color:[UIColor colorWithRGBHex:0xF0F0F0] opacity:0.8];
+        if (self.haveShadow) {
+            [self.navigationBar dropShadowWithOffset:CGSizeMake(0, 3) radius:3 color:[UIColor colorWithRGBHex:0xF0F0F0] opacity:0.8];
+        }
         [self.navigationBar addSubview:_navLineView];
     }
 }

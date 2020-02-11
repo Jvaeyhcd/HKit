@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HBaseNavigationController : UINavigationController
 
+@property (nonatomic, assign) BOOL haveShadow;
+
 @end
 
 NS_ASSUME_NONNULL_END

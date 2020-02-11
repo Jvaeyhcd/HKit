@@ -15,6 +15,9 @@
  *  显示提示消息
  */
 + (void)showToast:(NSString *)msg{
+    
+    [HHUDUtil hideLoading];
+    
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:window animated:YES];
     hud.mode = MBProgressHUDModeText;
@@ -23,10 +26,13 @@
     hud.contentColor = [UIColor whiteColor];
     hud.bezelView.backgroundColor = [UIColor colorWithWhite:0 alpha:0.8];
     hud.removeFromSuperViewOnHide = YES;
-    [hud hideAnimated:YES afterDelay:1];
+    [hud hideAnimated:YES afterDelay:1.0f];
 }
 
 + (void)showLoading {
+    
+    [HHUDUtil hideLoading];
+    
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:[UIApplication sharedApplication].keyWindow animated:YES];
     hud.mode = MBProgressHUDModeIndeterminate;
     hud.contentColor = [UIColor whiteColor];

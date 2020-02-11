@@ -12,6 +12,7 @@
 #pragma mark - Macro
 
 #import "UIMacro.h"
+#import "HPlaceHolderTextView.h"
 
 #pragma mark - Catagory
 
