@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "HKit"
+  spec.name         = "HcdKit"
   spec.version      = "1.0.0"
   spec.summary      = "A iOS UI Kit called HKit."
 
